@@ -1,0 +1,77 @@
+#navbar {
+    width: 17rem;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.navbar-menu {
+    align-items: stretch;
+}
+
+a.navbar-item:hover  {
+    background-color:unset;
+    color:rgb(62,146,133);
+}
+
+a.navbar-item:is-active {
+    background-color:unset;
+    font-weight: bolder;
+    color:rgb(79,92,153);
+}
+
+#profile_pic {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 1023px){
+    #profile_pic{
+        visibility:hidden;
+        height: 0;
+        min-height:0;
+    }
+
+    #navbar{
+        height:3rem;
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: flex-end;
+    }
+
+    .navbar.is-fixed-top .navbar-menu, .navbar.is-fixed-top-touch .navbar-menu{
+        overflow:unset;
+        position: absolute;
+        height: 15rem;
+        width: 100%;
+        margin-top: 2.5rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    .navbar-menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navbar-brand{
+        display: flex;
+        margin: auto auto 0;
+        padding: 0.5rem;
+    }
+    #navbar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
