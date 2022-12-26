@@ -1,3 +1,11 @@
+.section {
+    height:100vh;
+    padding:0;
+
+}
+
+/*Navbar*/
+
 #navbar {
     width: 17rem;
     height: 100vh;
@@ -8,19 +16,16 @@
     align-content: stretch;
 }
 
-.navbar-menu {
-    align-items: stretch;
+.navbar-end {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-a.navbar-item:hover  {
-    background-color:unset;
-    color:rgb(62,146,133);
-}
-
-a.navbar-item:is-active {
-    background-color:unset;
-    font-weight: bolder;
-    color:rgb(79,92,153);
+a.navbar-item {
+    font-weight: bold;
+    color:rgb(142, 255, 238);
 }
 
 #profile_pic {
@@ -75,3 +80,167 @@ a.navbar-item:is-active {
     }
 }
 
+.menu-list a:hover  {
+    background-color:unset;
+    color:rgb(0,167,142);
+}
+
+.menu-list a.is-active {
+    background-color:unset;
+    color: rgb(126, 52, 237);
+}
+
+/*Main column*/
+@media screen and (min-width: 1024px){
+    .main-column{
+        margin-left: 17rem;
+    }
+}
+
+/*Title*/
+.title {
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 5.5rem;
+    margin-top: 8rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#surname, a[href^="mailto:"] {
+    color: rgb(126, 52, 237);
+}
+
+a[href^="mailto:"]:hover {
+    text-decoration: underline;
+}
+
+.subtitle{
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.description{
+    color: rgba(0, 0, 0, 0.5);
+    font-size:1.2em;
+    text-indent: 1em;
+    text-align: left;
+}
+
+/*Icons*/
+.social-icons a {
+    display:inline-flex;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #495057;
+    color: #fff !important;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    margin-right: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Project thumbnails*/
+.container {
+    min-width: 320px;
+    max-width: 500px;
+    max-height: 360px;
+    width: 48%;
+  }
+@media screen and (max-width: 1023px){
+    .container{
+        font-size: 0.7rem;
+        padding:0;
+    }
+}  
+.thumbnail-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width:auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(126, 52, 237,0.7);
+}
+
+  
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.thumbnail-description{
+    color:white;
+    font-size: larger;
+    padding: 2rem;
+}
+
+.title-thumbnail{
+    background-color: rgb(231, 235, 240);
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Alumni Sans', sans-serif;
+    font-size:xx-large;
+    min-height: 1rem;
+    width: 100%;
+    margin: auto;
+    top: auto;
+    bottom: 0;
+    height: 3.75rem;
+    position:absolute;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1023px){
+    .title-thumbnail{
+        max-height: 2.5rem;
+        padding-left: 1em;
+        font-size:x-large;        
+        }
+    .thumbnail-description{
+        padding:1rem;
+    }    
+}    
+.icon-links{
+    float:right;
+    vertical-align: baseline;
+    padding-right: 2rem;
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.5)!important;
+}
+
+.icon-eye{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.icon-eye:hover{
+    color: rgb(0, 0, 0);
+}

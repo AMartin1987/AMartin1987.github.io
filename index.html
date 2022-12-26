@@ -5,12 +5,15 @@
     <title>Alejandra Martin's portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&family=Gayathri&family=Inconsolata:wght@600&family=Kalam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dc66c63dfd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <section class="section" >
+    <section class="section" id="about">
         <div class="columns is-vcentered">
             <div class="column is-3-desktop has-background-primary navbar is-fixed-top" role="navigation" aria-label="main navigation" id="navbar">
                 <a class="navbar-burger" id="burger">
@@ -22,22 +25,59 @@
                     <img class="is-rounded" src="assets\profile_color.png" id="profile_pic">
                 </figure>
                 <aside class="navbar-menu" id="nav-links">
-                    <ul class="menu-list is-uppercase mt-5 mb-5" >
+                    <ul class="menu-list is-uppercase mt-1 mb-1">
                         <div class="navbar-end">
-                            <li"><a class="navbar-item is-active">Sobre mí</a></li>
-                            <li><a class="navbar-item">Portfolio</a></li>
-                            <li><a class="navbar-item">Habilidades</a></li>
-                            <li><a class="navbar-item">Educación</a></li>
-                            <li><a class="navbar-item">Contacto</a></li>
+                            <li><a class="navbar-item is-active" href="#about" id="link-one">Sobre mí</a></li>
+                            <li><a class="navbar-item" href="#experience" id="link-two">Portfolio</a></li>
+                            <li><a class="navbar-item" href="#skills" id="link-three">Habilidades</a></li>
+                            <li><a class="navbar-item" href="#education" id="link-four">Educación</a></li>
+                            <li><a class="navbar-item" href="#blog" id="link-five">Blog</a></li>
+                            <li><a class="navbar-item" href="#contact" id="link-six">Contacto</a></li>
                         </div>
                     </ul>
                 </aside>
             </div>
-            <div class="column is-9-desktop">
-                <h1 class="title">Alejandra <span id="surname">Martín</span></h1>
-                <h2 class="subtitle">Subtitle</h2>
+            <div class="column is-9-desktop main-column">
+                <h1 class="title pl-6 mb-2">Alejandra <span id="surname">Martín</span></h1>
+                <h3 class="subtitle pl-6">ALICANTE · ESPAÑA · +34 683365321 · <a href="mailto:alejandramartin@outlook.com">ALEJANDRAMARTIN@OUTLOOK.COM</a></h2>
+                <p class="description pl-6 pt-5">Soy una psicóloga argentina incursionando de manera autodidacta en el mundo de la programación, con particular interés en el uso de <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Python</span> para el <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">desarrollo backend</span>.</p>
+                <p class="description pl-6">Disfruto enormemente de aprender nuevas herramientas y resolver problemas en este ámbito.</p>
+                <p class="description pl-6">Realicé una webapp con <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Flask</span> (con integración a la API de Google Maps y Google Places) que registra en una base de datos relacional y despliega información exhaustiva sobre la ubicación de aves caídas y refugios para ellas.</p>
+                <p class="description pl-6">Actualmente me encuentro trabajando en un nuevo proyecto con el objetivo de aprender <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Django</span> y <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">PostgreSQL</span>.</p>
+                <div class="social-icons pl-6 pt-6">
+                    <a class="icon-style" href="https://www.linkedin.com/in/alejandra-mart%C3%ADn-2b537a20a/">
+                    <span class="icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </span>
+                    </a>
+                    <a class="icon-style" href="https://github.com/AMartin1987">
+                        <span class="icon">
+                            <i class="fa-brands fa-github"></i>
+                        </span>
+                        </a>
+                </div>
+        </div>
+        </div>
+    </section>
+
+    <hr class="m-0">
+    <section class="section" id="experience">
+    <div class="columns is-vcentered">        
+        <div class="column main-column is-9-desktop">
+            <h1 class="title is-size-1 has-text-weight-bold pl-6 mt-6">PROYECTO REALIZADO</h1>            
+            <div class="container ml-6 mt-6">
+                <img src="assets\proyecto-aves.png" alt="Proyecto Aves" class="thumbnail-img">
+                <div class="overlay">
+                  <div class="thumbnail-description">Aplicación CRUD para registrar y visualizar en un mapa aves caídas y refugios para rehabilitarlas. Backend utilizando Flask y SQLite3, con autenticación, dashboard e integración con APIs de Google.
+                    Frontend realizado con Bootstrap 5, con funcionalidades escritas con Javascript y JQuery.</div>
+                    <h2 class="title-thumbnail">AVES CAIDAS <p class="icon-links">
+                        <a class="icon-eye" target="_blank" href="https://amartin1987.eu.pythonanywhere.com/"><i class="fa-solid fa-eye"></i></a>
+                      </p></h2>
+
+                </div>
             </div>
         </div>
+    </div>    
     </section>
     </body>
 </html>
