@@ -1,7 +1,12 @@
 .section {
-    height:100vh;
     padding:0;
+}
 
+.resume-section {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+    max-width: 75rem;
+    min-height:100vh;
 }
 
 /*Navbar*/
@@ -101,7 +106,6 @@ a.navbar-item {
 .title {
     font-family: 'Alumni Sans', sans-serif;
     font-size: 5.5rem;
-    margin-top: 8rem;
     color: rgba(0, 0, 0, 0.8);
 }
 
@@ -173,7 +177,7 @@ a[href^="mailto:"]:hover {
     width:auto;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(126, 52, 237,0.7);
+    background-color: rgba(126, 52, 237,0.8);
 }
 
   
