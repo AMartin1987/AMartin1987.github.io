@@ -42,11 +42,11 @@ a.navbar-item:active{
 }
 @media screen and (max-width: 1023px){
 
-    .title, .subtitle, .description, .container {
+    .title, .subtitle, .description {
         padding-left:1rem!important;
-        padding-right:0.8rem!important;
-        margin-left:2rem!important;
+        padding-right:1rem!important;
     }
+
     #profile_pic{
         visibility:hidden;
         height: 0;
@@ -177,8 +177,10 @@ a[href^="mailto:"]:hover {
     .container{
         font-size: 0.7rem;
         padding:0;
+        margin-left: 1rem!important; 
     }
-}  
+}
+  
 .thumbnail-img {
     display: block;
     width: 100%;
