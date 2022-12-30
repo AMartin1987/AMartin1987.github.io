@@ -2,48 +2,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alejandra Martin's portfolio</title>
+    <title>Alejandra Martín - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/nolan/64/briefcase.png">
+    
+
+    <!-- Bulma CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    
+    <!-- My CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/dc66c63dfd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    
+    <!-- JS -->
+    <script src="index.js"></script>
 </head>
-<body>
+<body id="start">
     <section class="section" id="about">
         <div class="columns is-vcentered">
             <div class="column is-3-desktop has-background-primary navbar is-fixed-top" role="navigation" aria-label="main navigation" id="navbar">
+                <a href="#start" id="to-top">Alejandra Martín</p>
                 <a class="navbar-burger" id="burger">
                     <span></span>
                     <span></span>
                     <span></span>
                 </a>
-                <figure class="navbar-brand image is-256x256">
-                    <img class="is-rounded" src="assets\profile_color.png" id="profile_pic">
-                </figure>
+                <a class="navbar-brand image is-256x256" a href="#start">
+                    <img class="is-rounded" src="assets\profile_color.png" id="profile_pic" >
+                </a>
                 <aside class="navbar-menu" id="nav-links">
                     <ul class="menu-list is-uppercase mt-1 mb-1">
                         <div class="navbar-end">
-                            <li><a class="navbar-item is-active" href="#about" id="link-one">Sobre mí</a></li>
-                            <li><a class="navbar-item" href="#experience" id="link-two">Portfolio</a></li>
-                            <li><a class="navbar-item" href="#skills" id="link-three">Habilidades</a></li>
-                            <li><a class="navbar-item" href="#education" id="link-four">Educación</a></li>
-                            <li><a class="navbar-item" href="#blog" id="link-five">Blog</a></li>
-                            <li><a class="navbar-item" href="#contact" id="link-six">Contacto</a></li>
+                            <li><a class="navbar-item" href="#about">Sobre mí</a></li>
+                            <li><a class="navbar-item" href="#experience">Proyecto</a></li>
+                            <li><a class="navbar-item" href="#skills">Habilidades</a></li>
+                            <li><a class="navbar-item" href="#education">Educación</a></li>
+                            <li><a class="navbar-item" href="#blog">Blog</a></li>
+                            <li><a class="navbar-item" href="#contact">Contacto</a></li>
                         </div>
                     </ul>
                 </aside>
             </div>
-            <div class="column is-9-desktop main-column resume-section">
-                <h1 class="title pl-6 mb-2">Alejandra <span id="surname">Martín</span></h1>
+            <div class="column is-9-desktop main-column resume-section mt-4">
+                <h1 class="title pl-6 mb-2 mt-6 pt-6">Alejandra <span id="surname">Martín</span></h1>
                 <h3 class="subtitle pl-6">ALICANTE · ESPAÑA · +34 683365321 · <a href="mailto:alejandramartin@outlook.com">ALEJANDRAMARTIN@OUTLOOK.COM</a></h2>
-                <p class="description pl-6 pt-5">Soy una psicóloga argentina incursionando de manera autodidacta en el mundo de la programación, con particular interés en el uso de <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Python</span> para el <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">desarrollo backend</span>.</p>
+                <p class="description pl-6 pt-2">Soy una aprendiz autodidacta de programación, con particular interés en el uso de <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Python</span> para el <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">desarrollo web</span>.</p>
                 <p class="description pl-6">Disfruto enormemente de resolver problemas en este ámbito, por lo que mi objetivo es convertir mi pasatiempo en una actividad de tiempo completo.</p>
                 <p class="description pl-6">Mi metodología de aprendizaje involucra estudiar literatura sobre redes y fundamentos de la programación (e.g. el <span><a href="https://roadmap.sh/backend" style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Backend Developer Roadmap</a></span>) y realizar cursos (e.g., <span><a href="https://pll.harvard.edu/course/cs50-introduction-computer-science" style="font-weight:bold;color: rgba(126, 52, 237,0.7)">CS50</a></span>) mientras aplico los conceptos adquiridos en la realización de proyectos que resuelven problemas relevantes para mí.</p>
-                <p class="description pl-6">Hasta el momento he adquirido experiencia en el uso de <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Flask</span> y <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">SQLite</span>. Cuento además con conocimientos básicos para implementar el frontend (HTML5, CS3, Javascript, JQuery, Bootstrap 5). Actualmente me encuentro trabajando en un nuevo proyecto con el objetivo de aprender <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Django</span> y <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">PostgreSQL</span>.</p>
+                <p class="description pl-6">He adquirido experiencia en el uso de <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Flask</span> y <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">SQLite</span>. Cuento además con conocimientos básicos para implementar el frontend (HTML5, CS3, Javascript, JQuery, Bootstrap 5). Actualmente me encuentro trabajando en un nuevo proyecto con el objetivo de aprender <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Django</span> y <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">PostgreSQL</span>.</p>
                 <div class="social-icons pl-6 pt-6">
                     <a class="icon-style" href="https://www.linkedin.com/in/alejandra-mart%C3%ADn-2b537a20a/">
                     <span class="icon">
@@ -63,13 +78,13 @@
     <hr class="m-0">
     <section class="section" id="experience">
     <div class="columns is-vcentered">        
-        <div class="column main-column is-9-desktop resume-section">
-            <h1 class="title is-size-1 has-text-weight-bold pl-6 mt-6">PROYECTO REALIZADO</h1>            
+        <div class="column main-column is-9-desktop pt-5 resume-section">
+            <h1 class="title is-size-1 has-text-weight-bold pl-6  mt-6 pt-6">PROYECTO REALIZADO</h1>            
             <div class="container ml-6 mt-6">
                 <img src="assets\proyecto-aves.png" alt="Proyecto Aves" class="thumbnail-img">
                 <div class="overlay">
                   <div class="thumbnail-description">Aplicación CRUD para registrar y visualizar en un mapa aves caídas y refugios para rehabilitarlas (realizada pensando en su utilidad para voluntariados animales). Backend utilizando Flask y SQLite3, con autenticación, dashboard e integración con APIs de Google.
-                    Frontend realizado con Bootstrap 5, con funcionalidades escritas con Javascript y JQuery.</div>
+                    Frontend realizado con Bootstrap 5, con funcionalidades escritas en Javascript y JQuery.</div>
                     <h2 class="title-thumbnail">AVES CAIDAS <p class="icon-links">
                         <a class="icon-eye" target="_blank" href="https://amartin1987.eu.pythonanywhere.com/"><i class="fa-solid fa-eye"></i></a>
                       </p></h2>
@@ -81,4 +96,3 @@
     </section>
     </body>
 </html>
-<script src="index.js"></script>

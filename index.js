@@ -1,47 +1,20 @@
-// mobile menu
-const burgerIcon = document.querySelector('#burger');
-const navbarMenu = document.querySelector('#nav-links');
 
-burgerIcon.addEventListener('click', () => {
-  navbarMenu.classList.toggle('is-active');
-});
 
-// tabs
-const tabs = document.querySelectorAll('.tabs li');
-const tabContentBoxes = document.querySelectorAll('#tab-content > div');
+$(document).ready(function() {
 
-tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    tabs.forEach(item => item.classList.remove('is-active'));
-    tab.classList.add('is-active');
+  // Toggle class "is-active" for navbar items on click
+  $(".navbar-item").on("click", function(e) {
+    $(".navbar-item").removeClass("is-active");
+    $(this).addClass("is-active");
 
-    const target = tab.dataset.target;
-    tabContentBoxes.forEach(box => {
-      if (box.getAttribute('id') === target) {
-        box.classList.remove('is-hidden');
-      } else {
-        box.classList.add('is-hidden');
-      }
     })
-  })
-})
 
-//Scrollspy
+  // Check for click events on the navbar burger icon
+  $(".navbar-burger").click(function() {
 
-// INSERT JAVASCRIPT HERE!
-// In-view function
-const handleView = item => {
-  const linkEl = document.querySelector(`#link-${item}`);
-    
-  let offsetHeight = 0.6*(window.innerHeight)
-  inView.offset({
-    bottom:offsetHeight
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      $(".navbar-burger").toggleClass("is-active");
+      $(".navbar-menu").toggleClass("is-active");
   });
-  
-  inView(`#${item}`)
-    .on("enter", () => linkEl.classList.add('is-active'))
-    .on("exit", el  => linkEl.classList.remove('is-active'))
-};
 
-// Apply method on each DOM element 
-["one", "two", "three", "four", "five", "six"].forEach(handleView);
+});

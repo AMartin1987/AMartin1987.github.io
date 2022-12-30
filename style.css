@@ -3,8 +3,6 @@
 }
 
 .resume-section {
-    padding-top: 5rem !important;
-    padding-bottom: 5rem !important;
     max-width: 75rem;
     min-height:100vh;
 }
@@ -33,6 +31,10 @@ a.navbar-item {
     color:rgb(142, 255, 238);
 }
 
+a.navbar-item:active{
+    color:rgb(126, 52, 237);
+}
+
 #profile_pic {
     max-width: 10rem;
     max-height: 10rem;
@@ -43,6 +45,11 @@ a.navbar-item {
         visibility:hidden;
         height: 0;
         min-height:0;
+    }
+
+    #to-top{
+        position: absolute;
+        display:grid;
     }
 
     #navbar{
@@ -65,6 +72,10 @@ a.navbar-item {
 }
 
 @media screen and (min-width: 1024px){
+    #to-top{
+        visibility:hidden;  
+    }
+
     .navbar-menu{
         display: flex;
         flex-direction: row;
@@ -119,14 +130,14 @@ a[href^="mailto:"]:hover {
 
 .subtitle{
     font-family: 'Alumni Sans', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.5);
 }
 
 .description{
     color: rgba(0, 0, 0, 0.5);
-    font-size:1.2em;
+    font-size:1.1em;
     text-indent: 1em;
     text-align: left;
 }
