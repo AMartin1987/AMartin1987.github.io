@@ -8,7 +8,7 @@
 
     <!-- Bulma CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-    <link rel="stylesheet" href="https://www.jsdelivr.com/package/npm/@creativebulma/bulma-tooltip">
+    <link rel="stylesheet" href="bulma-tooltip.css">
 
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css">
@@ -59,7 +59,7 @@
                 <p class="description pl-6 pt-2 has-text-justified">Soy una aprendiz autodidacta de programación, con particular interés en el uso de <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Python</span> para el <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">desarrollo web</span> (con especial atención al aspecto backend y de bases de datos).</p>
                 <p class="description pl-6 has-text-justified">Disfruto enormemente de resolver problemas en este ámbito, por lo que mi objetivo es convertir mi pasatiempo en una actividad de tiempo completo.</p>
                 <p class="description pl-6 has-text-justified">Mi metodología de aprendizaje involucra estudiar literatura sobre fundamentos de la programación y conceptos que es necesario conocer para desarrollar el aspecto backend de un proyecto (e.g. el <span><a href="https://roadmap.sh/backend" style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Backend Developer Roadmap</a></span>), así como realizar cursos (e.g., <span><a href="https://pll.harvard.edu/course/cs50-introduction-computer-science" style="font-weight:bold;color: rgba(126, 52, 237,0.7)">CS50</a></span>) mientras aplico estos conocimientos en la realización de proyectos que resuelven problemas relevantes para mí.</p>
-                <p class="description pl-6 has-text-justified">He adquirido experiencia en el uso de <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Flask</span> y <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">SQLite</span>. Cuento además con conocimientos básicos para implementar el <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">frontend</span>. Actualmente me encuentro trabajando en un nuevo proyecto con el objetivo de aprender <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Django</span> y <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">PostgreSQL</span>.</p>
+                <p class="description pl-6 has-text-justified">He adquirido experiencia en el uso de <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Flask</span> y <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">SQLite</span>. Cuento además con conocimientos básicos para implementar el <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">frontend</span> de mis proyectos. Actualmente me encuentro trabajando en un nuevo proyecto con el objetivo de aprender <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Django</span> y <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">PostgreSQL</span>.</p>
                 <div class="social-icons pl-6 pt-6">
                     <a class="icon-style" href="https://www.linkedin.com/in/alejandra-mart%C3%ADn-2b537a20a/">
                     <span class="icon">
@@ -101,27 +101,33 @@
         <div class="columns is-vcentered">        
             <div class="column main-column is-9-desktop pt-5 resume-section">
                 <h1 class="title is-size-1 has-text-weight-bold pl-6  mt-6">HABILIDADES</h1>
-                <div class="ml-6 p-0"> 
-                    <h3 class="subtitle pl-0">FRONTEND</h3>
-                    <img src="assets\icons\html.png" alt="HTML" data-tooltip="HTML" class="dev-icons tooltip">
-                    <img src="assets\icons\css.png" alt="CSS" data-tooltip="CSS3" class="dev-icons tooltip">
-                    <img src="assets\icons\js.png" alt="Javascript" data-tooltip="Javascript" class="dev-icons tooltip">
-                    <img src="assets\icons\jquery.png" alt="JQuery" data-tooltip="JQuery" class="dev-icons tooltip">
-                    <img src="assets\icons\bootstrap.png" alt="Bootstrap" data-tooltip="Bootstrap" class="dev-icons tooltip">
+                <div class="ml-6 mb-4 p-0"> 
+                    <h3 class="subtitle pl-0 mb-1">FRONTEND</h3>
+                    <img src="assets\icons\html.png" alt="HTML" class="dev-icons" title="HTML5">
+                    <img src="assets\icons\css.png" alt="CSS" class="dev-icons" title="CSS3">
+                    <img src="assets\icons\js.png" alt="Javascript" class="dev-icons" title="Javascript">
+                    <img src="assets\icons\jquery.png" alt="JQuery" class="dev-icons" title="JQuery">
+                    <img src="assets\icons\bootstrap.png" alt="Bootstrap" class="dev-icons" title="Bootstrap 5">
                 </div>
-                <div class="ml-6 p-0"> 
-                    <h3 class="subtitle pl-0">BACKEND</h3>
-                    <img src="assets\icons\python.png" alt="Python" data-tooltip="Python" class="dev-icons tooltip">
-                    <img src="assets\icons\flask.png" alt="Flask" data-tooltip="Flask" class="dev-icons tooltip">
+                <div class="ml-6 mb-4 p-0"> 
+                    <h3 class="subtitle pl-0 mb-1">BACKEND</h3>
+                    <img src="assets\icons\python.png" alt="Python" class="dev-icons" title="Python">
+                    <img src="assets\icons\flask.png" alt="Flask" class="dev-icons" title="Flask">
                 </div>
-                <div class="ml-6 p-0"> 
-                    <h3 class="subtitle pl-0">BASES DE DATOS Y OTROS</h3>
-                    <img src="assets\icons\sqlite.png" alt="SQlite" data-tooltip="Python" class="dev-icons tooltip">
-                    <img src="assets\icons\git.png" alt="Git" data-tooltip="Flask" class="dev-icons tooltip">
+                <div class="ml-6 mb-4 p-0"> 
+                    <h3 class="subtitle pl-0 mb-1">BASES DE DATOS Y OTROS</h3>
+                    <img src="assets\icons\sqlite.png" alt="SQlite" class="dev-icons" title="SQlite3">
+                    <img src="assets\icons\git.png" alt="Git" class="dev-icons" title="Git">
                 </div>
-
             </div>
         </div>            
-    </section>        
+    </section>
+    
+    <hr class="m-0">
+    <section class="section" id="experience">
+    <div class="columns is-vcentered">        
+        <div class="column main-column is-9-desktop pt-5 resume-section">
+            <h1 class="title is-size-1 has-text-weight-bold pl-6  mt-6 pt-6">EDUCACIÓN</h1>            
+            <div class="container ml-6 mt-6 p-0">
     </body>
 </html>
