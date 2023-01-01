@@ -20,7 +20,7 @@
 }
 
 .navbar-end {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -28,7 +28,7 @@
 
 a.navbar-item {
     font-weight: bold;
-    color:rgb(142, 255, 238);
+    color:rgb(73,80,87);
 }
 
 a.navbar-item:active{
@@ -47,6 +47,11 @@ a.navbar-item:active{
         padding-right:1rem!important;
     }
 
+    .main-title{
+        line-height: 0.90;
+        padding-bottom: 2rem;
+    }
+
     #profile_pic{
         visibility:hidden;
         height: 0;
@@ -55,14 +60,12 @@ a.navbar-item:active{
 
     #to-top{
         position: absolute;
+        bottom:1px;
         left:3rem;
-    }
-    #to-top a{
         color:black;
-    }
+        font-family: 'Alumni Sans', sans-serif;
+        font-size:xx-large;
 
-    #to-top a{
-        color:black;
     }
 
     #navbar{
@@ -275,8 +278,8 @@ a[href^="mailto:"]:hover {
 /*Dev Icons*/
 
 .dev-icons{
-    max-width: 128px;
-    max-height: 128px;
+    max-width: 100px;
+    max-height: 100px;
     padding: 1rem;
 }
 
