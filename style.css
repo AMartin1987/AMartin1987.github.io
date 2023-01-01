@@ -185,6 +185,10 @@ a[href^="mailto:"]:hover {
         padding:0;
         margin-left: 1rem!important; 
     }
+
+    .pl-mobile{
+        margin-left:1rem!important;
+    }
 }
   
 .thumbnail-img {
