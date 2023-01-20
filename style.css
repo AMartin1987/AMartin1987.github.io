@@ -34,6 +34,11 @@ a.navbar-item:active{
     color:rgb(126, 52, 237);
 }
 
+a.navbar-item:focus, a.navbar-item:focus-within{
+    color:rgb(126, 52, 237);
+    background-color: rgb(0,209,178);
+}
+
 #profile_pic {
     max-width: 10rem;
     max-height: 10rem;
