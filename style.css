@@ -106,6 +106,7 @@ a.navbar-item:focus, a.navbar-item:focus-within{
         margin-top: 2.5rem;
     }
 
+
 }
 
 @media screen and (min-width: 1024px){
@@ -251,7 +252,7 @@ a[href^="mailto:"]:hover {
 
 .thumbnail-description{
     color:white;
-    font-size: larger;
+    font-size: 1.2rem;
     padding: 2rem;
 }
 
