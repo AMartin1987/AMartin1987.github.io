@@ -1,10 +1,11 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alejandra Martín - Portfolio</title>
     <link rel="icon" type="image/x-icon" href="https://img.icons8.com/nolan/64/briefcase.png">
-    
+
 
     <!-- Bulma CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
@@ -17,101 +18,139 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300&display=swap" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/dc66c63dfd.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
-    
+
     <!-- JS -->
     <script src="index.js"></script>
 </head>
+
 <body id="start">
     <section class="section" id="about">
         <div class="columns is-vcentered">
-            <div class="column is-3-desktop has-background-primary navbar is-fixed-top" role="navigation" aria-label="main navigation" id="navbar">
+            <div class="column is-3-desktop has-background-primary navbar is-fixed-top" role="navigation"
+                aria-label="main navigation" id="navbar">
                 <a class="is-hidden-tablet" href="#start" id="to-top">ALEJANDRA MARTÍN</p>
-                <a class="navbar-burger" id="burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
-                <a class="navbar-brand image is-256x256" a href="#start">
-                    <img class="is-rounded" src="assets\profile_color.png" id="profile_pic" >
-                </a>
-                <aside class="navbar-menu" id="nav-links">
-                    <ul class="menu-list is-uppercase mt-1 mb-1">
-                        <div class="navbar-end pl-3">
-                            <li><a class="navbar-item" href="#about">Sobre mí</a></li>
-                            <li><a class="navbar-item" href="#experience">Proyectos</a></li>
-                            <li><a class="navbar-item" href="#skills">Habilidades</a></li>
-                            <li><a class="navbar-item" href="#education">Educación</a></li>
-                            <!--<li><a class="navbar-item" href="#blog">Blog</a></li>-->
-                            <li><a class="navbar-item" href="#contact">Contacto</a></li>
-                        </div>
-                    </ul>
-                </aside>
+                    <a class="navbar-burger" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <a class="navbar-brand image is-256x256" a href="#start">
+                        <img class="is-rounded" src="assets\profile_color.png" id="profile_pic">
+                    </a>
+                    <aside class="navbar-menu" id="nav-links">
+                        <ul class="menu-list is-uppercase mt-1 mb-1">
+                            <div class="navbar-end pl-3">
+                                <li><a class="navbar-item" href="#about">Sobre mí</a></li>
+                                <li><a class="navbar-item" href="#experience">Proyectos</a></li>
+                                <li><a class="navbar-item" href="#skills">Habilidades</a></li>
+                                <li><a class="navbar-item" href="#education">Educación</a></li>
+                                <!--<li><a class="navbar-item" href="#blog">Blog</a></li>-->
+                                <li><a class="navbar-item" href="#contact">Contacto</a></li>
+                            </div>
+                        </ul>
+                    </aside>
             </div>
             <div class="column is-9-desktop main-column resume-section mt-4">
                 <h1 class="title main-title pl-6 mb-2 mt-6 pt-6">Alejandra <span id="surname">Martín</span></h1>
-                <h3 class="subtitle pl-6">ALICANTE · ESPAÑA · +34 683365321 · <a href="mailto:alejandramartin@outlook.com">ALEJANDRAMARTIN@OUTLOOK.COM</a></h2>
-                <p class="description pt-2 has-text-justified">Soy una argentina residiendo en Alicante. Actualmente estudio <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Desarrollo en Aplicaciones Multiplataforma</span> (modalidad semipresencial) en IES Dr Balmis.</p>
-                <p class="description has-text-justified">Me interesa el uso de <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Python</span> para el <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">desarrollo web</span>. </p>
-                <p class="description has-text-justified">Mi metodología de aprendizaje involucra realizar cursos y estudiar literatura sobre fundamentos de la programación y otros conceptos (en particular relacionados al <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">backend</span>) para luego ponerlos en práctica desarrollando proyectos relevantes para mí.</p>
-                <p class="description has-text-justified">He adquirido experiencia en el uso de <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Flask</span> y <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">SQLite</span>. Cuento además con conocimientos básicos para implementar el <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">frontend</span> de mis proyectos. Actualmente me encuentro trabajando en nuevos proyectos con el objetivo de focalizar mi aprendizaje en <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Django</span> y <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">PostgreSQL</span>.</p>
-                <div class="social-icons pl-6 pt-6">
-                    <a class="icon-style" href="https://www.linkedin.com/in/amartin-arg/">
-                    <span class="icon">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </span>
-                    </a>
-                    <a class="icon-style" href="https://github.com/AMartin1987">
-                        <span class="icon">
-                            <i class="fa-brands fa-github"></i>
-                        </span>
+                <h3 class="subtitle pl-6 pb-3">ALICANTE · ESPAÑA · +34 683365321 · <a
+                        href="mailto:alejandramartin@outlook.com">ALEJANDRAMARTIN@OUTLOOK.COM</a></h2>
+                    <p class="description pt-6 pl-6 pb-3 has-text-justified">Soy una argentina residiendo en Alicante.
+                        Actualmente estudio <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Desarrollo en
+                            Aplicaciones Multiplataforma</span> en IES Dr Balmis.</p>
+                    <p class="description pl-6 pb-3 has-text-justified">Me interesa el uso de <span
+                            style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Python</span> para el <span
+                            style="font-weight:bold;color: rgba(126, 52, 237,0.7);">desarrollo web</span>. </p>
+                    <p class="description pl-6 pb-3 has-text-justified">Mi metodología de aprendizaje involucra realizar
+                        cursos y estudiar literatura sobre fundamentos de la programación y otros conceptos (en
+                        particular relacionados al <span
+                            style="font-weight:bold;color: rgba(126, 52, 237,0.7);">backend</span>) para luego ponerlos
+                        en práctica desarrollando proyectos relevantes para mí.</p>
+                    <p class="description pl-6 pb-3 has-text-justified">He adquirido experiencia en el uso de <span
+                            style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Flask</span> y <span
+                            style="font-weight:bold;color: rgba(126, 52, 237,0.7);">SQLite</span>. Cuento además con
+                        conocimientos básicos para implementar el <span
+                            style="font-weight:bold;color: rgba(126, 52, 237,0.7);">frontend</span> de mis proyectos.
+                        Actualmente me encuentro trabajando en nuevos proyectos con el objetivo de focalizar mi
+                        aprendizaje en <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">Django</span> y
+                        <span style="font-weight:bold;color: rgba(126, 52, 237,0.7);">PostgreSQL</span>.
+                    </p>
+                    <div class="social-icons pl-6 pt-6">
+                        <a class="icon-style" href="https://www.linkedin.com/in/amartin-arg/">
+                            <span class="icon">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </span>
                         </a>
-                </div>
-        </div>
+                        <a class="icon-style" href="https://github.com/AMartin1987">
+                            <span class="icon">
+                                <i class="fa-brands fa-github"></i>
+                            </span>
+                        </a>
+                    </div>
+            </div>
         </div>
     </section>
 
     <hr class="m-0">
     <section class="section" id="experience">
-    <div class="columns is-vcentered">        
-        <div class="w-100 column main-column is-11-desktop pt-5 resume-section">
-            <h1 class="w-100 title is-size-1 has-text-weight-bold pl-6 mt-6 pt-6">PROYECTOS REALIZADOS</h1>            
-            <div class="horizontal-flex">
-                <div class="container ml-6 mt-6 p-0">
-                    <img src="assets\proyecto-aves.png" alt="Proyecto Aves" class="thumbnail-img">
-                    <div class="overlay">
-                    <div class="thumbnail-description">Aplicación CRUD para registrar y visualizar en un mapa aves caídas y refugios para rehabilitarlas. Backend utilizando Flask y SQLite3, con autenticación, edición de publicaciones e integración con APIs de Google.
-                        Frontend realizado con Bootstrap 5, con funcionalidades escritas en Javascript y JQuery.</div>
-                        <h2 class="title-thumbnail">AVES CAIDAS <p class="icon-links">
-                            <a class="icon-eye" target="_blank" href="https://amartin1987.eu.pythonanywhere.com/"><i class="fa-solid fa-eye"></i></a>
-                        </p></h2>
+        <div class="columns is-vcentered">
+            <div class="w-100 column main-column is-11-desktop pt-5 resume-section">
+                <h1 class="w-100 title is-size-1 has-text-weight-bold pl-6 mt-6 pt-6">PROYECTOS REALIZADOS</h1>
+                <div class="horizontal-flex">
+                    <div class="container ml-6 mt-6 p-0">
+                        <img src="assets\proyecto-aves.png" alt="Proyecto Aves" class="thumbnail-img">
+                        <div class="overlay">
+                            <div class="thumbnail-description">Aplicación CRUD para registrar y visualizar en un mapa
+                                aves caídas y refugios para rehabilitarlas. Backend utilizando Flask y SQLite3, con
+                                autenticación, edición de publicaciones e integración con APIs de Google.
+                                Frontend realizado con Bootstrap 5, con funcionalidades escritas en Javascript y JQuery.
+                            </div>
+                            <h2 class="title-thumbnail">AVES CAIDAS <p class="icon-links">
+                                    <a class="icon-eye" target="_blank"
+                                        href="https://amartin1987.eu.pythonanywhere.com/"><i
+                                            class="fa-solid fa-eye"></i></a>
+                                </p>
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="container ml-6 mt-6 p-0">
+                        <img src="assets\blog-personal.png" alt="Personal Blog" class="thumbnail-img">
+                        <div class="overlay">
+                            <div class="thumbnail-description">Blog personal creado con Django y PostgreSQL, en el que
+                                realizo publicaciones sobre mis estudios autodidactas de programación además de mis
+                                intereses personales. CRUD mediante el admin de Django y frontend realizado con
+                                Bootstrap 5.</div>
+                            <h2 class="title-thumbnail">MY PERSONAL BLOG <p class="icon-links">
+                                    <a class="icon-eye" target="_blank" href="https://amartinblog.vercel.app/"><i
+                                            class="fa-solid fa-eye"></i></a>
+                                </p>
+                            </h2>
+                        </div>
                     </div>
                 </div>
-  
-            <div class="container ml-6 mt-6 p-0">                
-                <img src="assets\blog-personal.png" alt="Personal Blog" class="thumbnail-img">
-                <div class="overlay">
-                  <div class="thumbnail-description">Blog personal creado con Django y PostgreSQL, en el que realizo publicaciones sobre mis estudios autodidactas de programación además de mis intereses personales. CRUD mediante el admin de Django y frontend realizado con Bootstrap 5.</div>
-                    <h2 class="title-thumbnail">MY PERSONAL BLOG <p class="icon-links">
-                        <a class="icon-eye" target="_blank" href="https://amartinblog.vercel.app/"><i class="fa-solid fa-eye"></i></a>
-                      </p></h2>
-                </div>
             </div>
-        </div>  
         </div>
-    </div>    
     </section>
 
     <hr class="m-0">
     <section class="section" id="skills">
-        <div class="columns is-vcentered">        
+        <div class="columns is-vcentered">
             <div class="column main-column is-9-desktop pt-5 resume-section">
                 <h1 class="title is-size-1 has-text-weight-bold pl-6  mt-6">HABILIDADES</h1>
-                <div class="pl-mobile ml-6 mb-4 p-0"> 
+                <div class="pl-mobile ml-6 mb-4 p-0">
+                    <h3 class="subtitle pl-0 mb-1">LENGUAJES</h3>
+                    <img src="assets\icons\python.png" alt="Python" class="dev-icons" title="Python">
+                    <img src="assets\icons\C++.png" alt="C++" class="dev-icons" title="C++">
+
+                </div>
+                <div class="pl-mobile ml-6 mb-4 p-0">
                     <h3 class="subtitle pl-0 mb-1">FRONTEND</h3>
                     <img src="assets\icons\html.png" alt="HTML" class="dev-icons" title="HTML5">
                     <img src="assets\icons\css.png" alt="CSS" class="dev-icons" title="CSS3">
@@ -119,69 +158,95 @@
                     <img src="assets\icons\jquery.png" alt="JQuery" class="dev-icons" title="JQuery">
                     <img src="assets\icons\bootstrap.png" alt="Bootstrap" class="dev-icons" title="Bootstrap 5">
                 </div>
-                <div class="pl-mobile ml-6 mb-4 p-0"> 
+                <div class="pl-mobile ml-6 mb-4 p-0">
                     <h3 class="subtitle pl-0 mb-1">BACKEND</h3>
-                    <img src="assets\icons\python.png" alt="Python" class="dev-icons" title="Python">
                     <img src="assets\icons\flask.png" alt="Flask" class="dev-icons" title="Flask">
                     <img src="assets\icons\django.png" alt="Django" class="dev-icons" title="Django">
                 </div>
-                <div class="pl-mobile ml-6 mb-4 p-0"> 
-                    <h3 class="subtitle pl-0 mb-1">BASES DE DATOS Y HERRAMIENTAS</h3>
+                <div class="pl-mobile ml-6 mb-4 p-0">
+                    <h3 class="subtitle pl-0 mb-1">BASES DE DATOS</h3>
+                    <img src="assets\icons\mysql.png" alt="MySQL" class="dev-icons" title="MySQL">
                     <img src="assets\icons\sqlite.png" alt="SQlite" class="dev-icons" title="SQlite3">
                     <img src="assets\icons\postgresql.png" alt="PostgreSQL" class="dev-icons" title="PostgreSQL">
+                </div>
+                <div class="pl-mobile ml-6 mb-4 p-0">
+                    <h3 class="subtitle pl-0 mb-1">HERRAMIENTAS</h3>
                     <img src="assets\icons\git.png" alt="Git" class="dev-icons" title="Git">
                     <img src="assets\icons\github.png" alt="Github" class="dev-icons" title="Github">
+                    <img src="assets\icons\oraclevm.png" alt="Oracle VirtualBox" class="dev-icons" title="Oracle VirtualBox">
+                    <img src="assets\icons\wserver.png" alt="Windows Server" class="dev-icons" title="Windows Server">
+                    <img src="assets\icons\GNUlinux.png" alt="GNU/Linux" class="dev-icons" title="GNU/Linux">
                 </div>
-                <div class="pl-mobile ml-6 mb-4 p-0"> 
+                <div class="pl-mobile ml-6 mb-4 p-0">
                     <h3 class="subtitle pl-0 mb-1">INGLÉS</h3>
-                    <p class="description pl-0"><a href="https://www.efset.org/cert/mLmUHk" style="color:rgb(126, 52, 237);">C2 PROFICIENT (comprensión auditiva y lectora, EF SET)</a></p>
+                    <p class="description pl-0"><a href="https://www.efset.org/cert/mLmUHk"
+                            style="color:rgb(126, 52, 237);">C2 PROFICIENT (comprensión auditiva y lectora, EF SET)</a>
+                    </p>
                 </div>
-            </div>    
-        </div>            
-    </section>
-    
-    <hr class="m-0">
-    <section class="section" id="education">
-    <div class="columns is-vcentered">        
-        <div class="column main-column is-9-desktop pt-5 resume-section">
-            <h1 class="title is-size-1 has-text-weight-bold pl-6  mt-6 pt-6">EDUCACIÓN</h1>            
-            <div class="pl-6 mb-6 pl-mobile">
-                <h3 class="subtitle pl-4 mb-5 has-text-weight-bold is-size-3">CURSOS</h3>
-                <p class="is-size-6 pl-4 pb-2"><span class="has-text-weight-bold">2021-2022  <a href="https://cs50.harvard.edu/certificates/e1945982-8b1f-46cf-b562-a865a224af6f" style="color:rgb(126, 52, 237);">(100%)</a></span> - CS50: Introduction to Computer Science (Harvard University).</a></p>
-                <p class="is-size-6 pl-4 pb-2"><span class="has-text-weight-bold">2022 <a href="assets\argentina_programa_2022.pdf"  style="color:rgb(126, 52, 237);"> (100%) </a></span> - Argentina Programa (Primera Parte: #SéProgramar).</p>
-                <p class="is-size-6 pl-4 pb-2"><span class="has-text-weight-bold">2022-Actualidad (90%) </span> - CS50P: Introduction to Programming with Python (Harvard University).</p>
-            </div>
-            <div class="pl-6 mb-6 pl-mobile">
-                <h3 class="subtitle pl-4 mb-5 has-text-weight-bold is-size-3">OTROS</h3>
-                <p class="is-size-6 pl-4 pb-2 grey-font"><span class="has-text-weight-bold">2024-Presente</span> - FP Superior - Desarrollo de Aplicaciones Multiplataforma (IES Dr Balmis, Alicante).</p>
-                <p class="is-size-6 pl-4 pb-2 grey-font"><span class="has-text-weight-bold">2005-2013 (100%)</span> - Licenciada en Psicología (Universidad del Salvador, Argentina).</p>
-                <p class="is-size-6 pl-4 pb-2"><span class="has-text-weight-bold">2017-2018 (100%)</span> - Especialización en Psicoterapia Individual, Grupal y Familiar, con Orientación Cognitiva (Fundación Aiglé, Argentina).</p>
             </div>
         </div>
-    </div>
     </section>
-    
+
+    <hr class="m-0">
+    <section class="section" id="education">
+        <div class="columns is-vcentered">
+            <div class="column main-column is-9-desktop pt-5 resume-section">
+                <h1 class="title is-size-1 has-text-weight-bold pl-6  mt-6 pt-6">EDUCACIÓN</h1>
+                <div class="pl-6 mb-6 pl-mobile">
+                    <h3 class="subtitle pl-4 mb-5 has-text-weight-bold is-size-3">FP SUPERIOR</h3>
+                    <p class="is-size-6 pl-4 pb-2 grey-font"><span class="has-text-weight-bold">2024-Presente</span> -
+                        Desarrollo de Aplicaciones Multiplataforma, modalidad semipresencial (IES Dr Balmis, Alicante).</p>
+                </div>
+                <div class="pl-6 mb-6 pl-mobile">
+                    <h3 class="subtitle pl-4 mb-5 has-text-weight-bold is-size-3">CURSOS</h3>
+                    <p class="is-size-6 pl-4 pb-2"><span class="has-text-weight-bold">2021-2022 <a
+                                href="https://cs50.harvard.edu/certificates/e1945982-8b1f-46cf-b562-a865a224af6f"
+                                style="color:rgb(126, 52, 237);">(100%)</a></span> - CS50: Introduction to Computer
+                        Science (Harvard University).</a></p>
+                    <p class="is-size-6 pl-4 pb-2"><span class="has-text-weight-bold">2022 <a
+                                href="assets\argentina_programa_2022.pdf" style="color:rgb(126, 52, 237);"> (100%)
+                            </a></span> - Argentina Programa (Primera Parte: #SéProgramar).</p>
+                    <p class="is-size-6 pl-4 pb-2"><span class="has-text-weight-bold">2024-Actualidad (90%) </span> -
+                        CS50P: Introduction to Programming with Python (Harvard University).</p>
+                </div>
+                <div class="pl-6 mb-6 pl-mobile">
+                    <h3 class="subtitle pl-4 mb-5 has-text-weight-bold is-size-3">OTROS</h3>
+                    <p class="is-size-6 pl-4 pb-2 grey-font"><span class="has-text-weight-bold">2005-2013 (100%)</span>
+                        - Licenciada en Psicología (Universidad del Salvador, Argentina).</p>
+                    <p class="is-size-6 pl-4 pb-2"><span class="has-text-weight-bold">2017-2018 (100%)</span> -
+                        Especialización en Psicoterapia Individual, Grupal y Familiar, con Orientación Cognitiva
+                        (Fundación Aiglé, Argentina).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <hr class="m-0">
     <section class="section" id="contact">
-    <div class="columns is-vcentered">        
-        <div class="column main-column is-9-desktop pt-6 mt-6 resume-section">
-            <h1 class="title is-size-1 has-text-weight-bold pl-6 mt-6 pt-6">CONTACTO</h1>
-            <div class="pl-6 mb-6 pl-mobile pt-2">
-                <h3 class="subtitle has-text-weight-bold pl-0 mb-1 is-size-4" style="line-height: 1.8;"><span class="has-text-black">TELÉFONO (WHATSAPP)</span> · +34 683365321</h3>
-                <h3 class="subtitle has-text-weight-bold pl-0 mb-1 is-size-4" style="line-height: 1.8;"><span class="has-text-black">EMAIL ·<a href="mailto:alejandramartin@outlook.com"> alejandramartin@outlook.com</a></h3>
-                <h3 class="subtitle has-text-weight-bold pl-0 mb-1 is-size-4 has-text-black" style="line-height: 1.8;">OTROS</h3>
-                <div class="social-icons pt-2 mt-2" style="padding-left:1rem;">
-                    <a class="icon-style" href="https://www.linkedin.com/in/AMartinArg">
-                    <span class="icon">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </span>
-                    </a>
-                    <a class="icon-style" href="https://github.com/AMartin1987">
-                        <span class="icon">
-                            <i class="fa-brands fa-github"></i>
-                        </span>
-                    </a>
-                </div>                
-            </div>
-    </body>
+        <div class="columns is-vcentered">
+            <div class="column main-column is-9-desktop pt-6 mt-6 resume-section">
+                <h1 class="title is-size-1 has-text-weight-bold pl-6 mt-6 pt-6">CONTACTO</h1>
+                <div class="pl-6 mb-6 pl-mobile pt-2">
+                    <h3 class="subtitle has-text-weight-bold pl-0 mb-1 is-size-4" style="line-height: 1.8;"><span
+                            class="has-text-black">TELÉFONO (WHATSAPP)</span> · +34 683365321</h3>
+                    <h3 class="subtitle has-text-weight-bold pl-0 mb-1 is-size-4" style="line-height: 1.8;"><span
+                            class="has-text-black">EMAIL ·<a href="mailto:alejandramartin@outlook.com">
+                                alejandramartin@outlook.com</a></h3>
+                    <h3 class="subtitle has-text-weight-bold pl-0 mb-1 is-size-4 has-text-black"
+                        style="line-height: 1.8;">OTROS</h3>
+                    <div class="social-icons pt-2 mt-2" style="padding-left:1rem;">
+                        <a class="icon-style" href="https://www.linkedin.com/in/AMartinArg">
+                            <span class="icon">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </span>
+                        </a>
+                        <a class="icon-style" href="https://github.com/AMartin1987">
+                            <span class="icon">
+                                <i class="fa-brands fa-github"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+</body>
+
 </html>

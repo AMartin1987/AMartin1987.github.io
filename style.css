@@ -14,8 +14,11 @@
     align-content: center;
 }
 
-/*Navbar*/
+.columns {
+    margin-top: 60px;
+}
 
+/*Navbar*/
 #navbar {
     width: 17rem;
     height: 100vh;
